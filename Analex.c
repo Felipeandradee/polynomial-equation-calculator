@@ -51,7 +51,7 @@ void montaToken(Categoria cat, char token[], int pos) {
         case SN: {
             printf("<SN, %s>\n", pSinais[pos]);
             Token.cat = cat;
-            Token.tipo.valor_char = token[0];
+            Token.tipo.codigo = pos;
             break;
         }
 
