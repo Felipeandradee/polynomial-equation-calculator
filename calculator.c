@@ -2,8 +2,22 @@
 
 int n_fun = 0;
 
+int pesquisa_funcao(char id){
+    int n = 0;
+    while (funcoes[n].id != '\0') {
+        if(funcoes[n].id == id){
+            return n;
+        }
+        n++;
+    }
+    return -1;
+}
+
 void adiciona_funcao() {
-//    TODO: search if has any function with a same id
+    if(pesquisa_funcao(funcaoAux.id) != -1){
+        printf("\nJa existe uma funcao %c\n", funcaoAux.id);
+        return;
+    }
     funcoes[n_fun] = funcaoAux;
     n_fun++;
 }

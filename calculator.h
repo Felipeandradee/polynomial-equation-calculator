@@ -2,6 +2,7 @@
 #define POLYNOMIAL_EQUATION_CALCULATOR_CALCULATOR_H
 
 #include "Analex.h"
+#include "AnaSint.h"
 
 typedef struct l {
     char variavel;
@@ -22,9 +23,11 @@ typedef struct f {
 
 FUNCAO funcoes[10];
 FUNCAO funcaoAux;
+FUNCAO funcao_resultado;
 int n_fun;
 
 void adiciona_funcao();
 void imprime_funcoes();
+int pesquisa_funcao(char id);
 
 #endif //POLYNOMIAL_EQUATION_CALCULATOR_CALCULATOR_H
