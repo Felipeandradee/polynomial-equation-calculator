@@ -2,6 +2,7 @@
 #define POLYNOMIAL_EQUATION_CALCULATOR_ANASINT_H
 
 #include "Analex.h"
+#include "calculator.h"
 
 typedef
 enum {
