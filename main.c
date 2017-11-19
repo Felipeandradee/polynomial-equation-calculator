@@ -14,13 +14,13 @@ int main() {
             exit(1);
         }
 
-        while (Token.cat != END) {
-            equacao();
-        }
+        equacao();
+
         printf("\nExpressao esta correta.\n");
         adiciona_funcao();
-        Token.cat = 0;
         p_string = 0;
+        memset(&Token, 0, sizeof(Token));
+        memset(&funcaoAux, 0, sizeof(funcaoAux));
     };
 
 }
